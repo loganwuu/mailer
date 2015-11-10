@@ -17,18 +17,22 @@ div#sender {
 }
 
 div#empty {
-  @include span-columns(7);
+  @include span-columns(5);
   @include media($mobile) {
     @include span-columns(1);
   };
 }
 
-// div#emptytwo {
-//   @include span-columns(6);
-//   @include media($mobile) {
-//     @include span-columns(1);
-//   };
-// }
+div#stamp {
+  @include span-columns(2);
+  width: 100px;
+  height: 100px;
+  background: #eee;
+  @include media($mobile) {
+    @include span-columns(0);
+    display: none;
+  };
+}
 
 div#recipient {
   @include span-columns(6);
