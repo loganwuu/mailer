@@ -226,8 +226,7 @@ div#recipient {
   display: block;
   margin-right: 2.35765%;
   width: 48.82117%;
-  margin-left: 25.58941%;
-  align: center; }
+  margin-left: 25.58941%; }
   div#recipient:last-child {
     margin-right: 0; }
   @media screen and (max-width: 500px) {
@@ -235,7 +234,8 @@ div#recipient {
       float: left;
       display: block;
       margin-right: 7.42297%;
-      width: 100%; }
+      width: 100%;
+      margin-left: 0%; }
       div#recipient:last-child {
         margin-right: 0; } }
 

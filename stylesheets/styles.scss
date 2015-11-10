@@ -36,6 +36,7 @@ div#recipient {
   // @include pad();
   @include media($mobile) {
     @include span-columns(4);
+    @include shift(0);
   };
-  align: center;
+  // align: center;
 }
