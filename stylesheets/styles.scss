@@ -16,8 +16,6 @@ div#sender {
   };
 }
 
-
-
 div#empty {
   @include span-columns(7);
   @include media($mobile) {
@@ -25,8 +23,16 @@ div#empty {
   };
 }
 
+// div#emptytwo {
+//   @include span-columns(6);
+//   @include media($mobile) {
+//     @include span-columns(1);
+//   };
+// }
+
 div#recipient {
   @include span-columns(6);
+  @include shift(3);
   // @include pad();
   @include media($mobile) {
     @include span-columns(4);
