@@ -1,8 +1,8 @@
-mailing.factory('MailingFactory', function MailingFactory() {
+mailer.factory('MailerFactory', function MailerFactory() {
   var factory = {};
-  factory.mailing = [];
+  factory.mailer = [];
   factory.addMailing = function() {
-    factory.mailing.push(
+    factory.mailer.push(
       {
         senderName: factory.senderName,
         senderAddress: factory.senderAddress,
