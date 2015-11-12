@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" ng-app="mailer">
   <head>
     <title>Mailer</title>
     <script src="lib/jquery-2.1.4.min.js"></script>
@@ -11,9 +11,11 @@
     <link rel="stylesheet" href="stylesheets/print.css" type="text/css" media="print" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   </head>
-  <body ng-app="mailer">
-    <div ui-view="header"></div>
-    <div ui-view="body"></div>
-    <div ui-view="footer"></div>
+  <body id="body-element">
+    <section class="container">
+      <div ui-view="header"></div>
+      <div ui-view="body"></div>
+      <div ui-view="footer"></div>
+    </section>
   </body>
 </html>

@@ -15,4 +15,17 @@ mailer.config(function($stateProvider, $urlRouterProvider) {
       }
     }
   });
+
+  $stateProvider.state('mailers.label', {
+    url: "/:mailerId",
+    views: {
+      'header': {
+        templateUrl: "partials/header.html",
+      },
+      'body': {
+        templateUrl: "partials/mailer.label.html",
+        controller: "MailerCtrl"
+      },
+    }
+  });
 });
