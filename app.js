@@ -13,6 +13,7 @@ mailer.config(function($stateProvider, $urlRouterProvider) {
       'footer': {
         templateUrl: "partials/footer.html"
       }
+<<<<<<< HEAD
     },
     controller: "MailerCtrl"
   });
@@ -21,5 +22,8 @@ mailer.config(function($stateProvider, $urlRouterProvider) {
     url: "/:mailerId",
     templateUrl: "partials/mailer.label.html",
     controller: "MailerCtrl"
+=======
+    }
+>>>>>>> 5fda312abb31cb8434b99960fc16b678d50a2b85
   });
 });
