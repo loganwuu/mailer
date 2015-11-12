@@ -13,19 +13,13 @@ mailer.config(function($stateProvider, $urlRouterProvider) {
       'footer': {
         templateUrl: "partials/footer.html"
       }
-    }
+    },
+    controller: "MailerCtrl"
   });
 
-  $stateProvider.state('mailers.label', {
+  $stateProvider.state('home.label', {
     url: "/:mailerId",
-    views: {
-      'header': {
-        templateUrl: "partials/header.html",
-      },
-      'body': {
-        templateUrl: "partials/mailer.label.html",
-        controller: "MailerCtrl"
-      },
-    }
+    templateUrl: "partials/mailer.label.html",
+    controller: "MailerCtrl"
   });
 });

@@ -1,4 +1,4 @@
-Mailer.factory('MailerFactory', function MailerFactory() {
+mailer.factory('MailerFactory', function MailerFactory() {
   var factory = {};
   factory.mailers = [];
 
@@ -11,7 +11,7 @@ Mailer.factory('MailerFactory', function MailerFactory() {
         recipientName: factory.recipientName,
         recipientAddress: factory.recipientAddress,
         recipientCity: factory.recipientCity,
-        id: factory.mailer.length + 1,
+        id: factory.mailers.length + 1,
       });
     // Reset text box
     factory.senderName = null;
