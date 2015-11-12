@@ -1,0 +1,35 @@
+<section class="container">
+  <div class="wrapper">
+    <h1 id="form-input">Your Mailing Envelope</h1>
+    <!-- mailer form -->
+    <fieldset class="new-label">
+      <form>
+        <div id="sender">
+          <input type="text" ng-model="MailerFactory.senderName" id="sender_name" placeholder="Enter sender's name (optional)">
+          <input type="text" id="sender_address" placeholder="Enter sender's street address (optional)">
+          <input type="text" id="sender_city" placeholder="Enter sender's city, state and zip code (optional)">
+        </div>
+        <div id="empty"></div>
+        <div id="stamp"></div>
+        <div id="recipient" align="center">
+          <input type="text" id="recipient_name" placeholder="Enter recipient's id" required>
+          <input type="text" id="recipient_address" placeholder="Enter recipient's street address" required>
+          <input type="text" id="recipient_city" placeholder="Enter recipient's city, state and zip code" required>
+          <br>
+          <input type="submit" value="Generate">
+        </div>
+      </form>
+      <form>
+      <button name="button">Add another address</button>
+      <button name="button">Delete</button>
+      <a href="javascript:window.print()"><button name="button" alt="print this page">Print</button></a>
+    </form>
+    </fieldset>
+    <!-- label for print -->
+    <div ng-model="label">
+      <div ui-view></div>
+    </div>
+  </div>
+</section>
+
+<div ui-view="body"></div>
